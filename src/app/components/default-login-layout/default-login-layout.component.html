@@ -1,30 +1,31 @@
 <main>
   <section class="form-section">
-    <img src="/assets/svg/icone-prosync.svg" alt="icone-logo-prosync">
     <h2>{{ title }}</h2>
 
     <ng-content> </ng-content>
 
-
     <div class="btn-wrapper">
 
       <button
-      class="btn-primary"
-      (click)="submit()"
-      [disabled] = "disablePrimaryBtn"
+        class="btn-primary"
+        (click)="submit()"
+        [disabled]="disablePrimaryBtn"
       >
+        {{ primaryBtnText }}
+      </button>
 
-      {{ primaryBtnText }}</button>
       <div class="divider">
         <div></div>
         <span>or</span>
         <div></div>
       </div>
-      <button class="btn-secondary"(click)="navigate()">{{ secondaryBtnText }}</button>
+      <button class="btn-secondary" (click)="navigate()">
+        {{ secondaryBtnText }}
+      </button>
     </div>
-
   </section>
   <section class="main-section">
     <h2>Seja bem vindo!</h2>
-  <img src="/assets/svg/hero-img.svg" alt="circle-img"></section>
+    <img src="/assets/svg/hero-img.svg" alt="circle-img" />
+  </section>
 </main>
