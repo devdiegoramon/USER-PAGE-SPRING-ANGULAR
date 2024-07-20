@@ -7,17 +7,24 @@
 
 
     <div class="btn-wrapper">
-      <button class="btn-primary">{{ primaryBtnText }}</button>
+
+      <button
+      class="btn-primary"
+      (click)="submit()"
+      [disabled] = "disablePrimaryBtn"
+      >
+
+      {{ primaryBtnText }}</button>
       <div class="divider">
         <div></div>
         <span>or</span>
         <div></div>
       </div>
-      <button class="btn-secondary">{{ secondaryBtnText }}</button>
+      <button class="btn-secondary"(click)="navigate()">{{ secondaryBtnText }}</button>
     </div>
 
   </section>
   <section class="main-section">
     <h2>Seja bem vindo!</h2>
-  <img src="/assets/svg/Circle.svg" alt="circle-img"></section>
+  <img src="/assets/svg/hero-img.svg" alt="circle-img"></section>
 </main>

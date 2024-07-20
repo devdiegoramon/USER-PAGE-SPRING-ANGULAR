@@ -29,24 +29,23 @@ section {
   padding: 0 3rem;
 
   img {
-    width: 8rem;
+    width: 80px;
     height: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
   }
   h2 {
-    font-size: 1.3rem;
+    font-size: 14px;
     font-weight: bold;
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
   }
 
   .btn-wrapper {
-    display: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 2rem;
+    gap: 20px;
 
     .divider {
       display: flex;
@@ -54,31 +53,35 @@ section {
       justify-content: center;
       width: 100%;
 
-      font-size: 1rem;
-      color: $gray-background;
-      font-weight: 40rem;
+      font-size: 10px;
+      color: $dividers;
+      font-weight: 400;
       text-transform: uppercase;
 
       span {
-        margin: 1rem;
+        margin: 10px;
       }
 
       div{
         flex-grow: 1;
-        height: 0.1rem;
+        height: 1px;
         background-color: $gray-background;
       }
     }
 
     button {
       width: 100%;
-      border-radius: 0.8rem;
+      border-radius: 8px;
       font-size: 1rem;
-      font-weight: 50rem;
+      font-weight: 500;
       border: none;
       background-color: transparent;
-      padding: 1rem 2rem;
+      padding: 0.8rem 0.5rem;
       cursor: pointer;
+
+      &:disabled {
+        opacity: 0.8;
+      }
 
       &.btn-primary {
         background-color: $primary-color;
